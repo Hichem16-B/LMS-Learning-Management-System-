@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    background: url('background-tech.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+      
+      
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background: #1e2a3c;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  .logo-img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+  }
+  
+  form input::placeholder {
+    color: #cccccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3fa9f5;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1f8edb;
+  }
+  
+  .signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .signup-text a {
+    color: #3fa9f5;
+    text-decoration: none;
+  }
+  .radio-group {
+  display: flex;
+  gap: 10px; /* Espace entre les boutons */
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espace entre le bouton et le texte */
+}
+/* ---------- STYLES SPÉCIFIQUES POUR ABSENCES.PROF.PHP ---------- */
+
+/* Adaptation du contenu principal pour la navbar verticale */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Styles pour la gestion des absences */
+.absences-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Titre principal */
+.absences-title {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Accordéon des séances */
+.accordion-button {
+    font-weight: 500;
+    background-color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e9f5ff;
+    color: #0d6efd;
+}
+
+/* Tableau des étudiants */
+.absences-table {
+    margin-top: 20px;
+}
+
+.absences-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Styles des statuts */
+.status-present {
+    color: #28a745;
+}
+
+.status-absent {
+    color: #dc3545;
+}
+
+.status-justifie {
+    color: #ffc107;
+}
+
+/* Bouton d'enregistrement */
+.btn-save {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+.btn-save:hover {
+    background-color: #1e2a38;
+    border-color: #1e2a38;
+}
+
+/* Champs de formulaire */
+.form-select, .form-control {
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Alertes */
+.alert {
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+    
+    .navbar-vertical {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        padding: 10px;
+    }
+    
+    .navbar-logo {
+        display: none;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+    }
+}

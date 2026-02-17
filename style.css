@@ -1,0 +1,199 @@
+/* ---------- AJOUTS POUR LES PAGES DEVOIRS ---------- */
+/* Conservez tout votre CSS existant au-dessus de ces lignes */
+
+/* Styles des formulaires */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background: #2c3e50;
+    border: 1px solid #3fa9f5;
+    border-radius: 5px;
+    color: white;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Styles des tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #2c3e50;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #3fa9f5;
+}
+
+table th {
+    background: #1b263b;
+    color: #3fa9f5;
+}
+
+/* Styles des boutons */
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3fa9f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1f8edb;
+}
+
+/* Styles des liens de téléchargement */
+a[download] {
+    color: #3fa9f5;
+    text-decoration: none;
+}
+
+a[download]:hover {
+    text-decoration: underline;
+}
+
+/* Style pour les fichiers déjà remis */
+.deja-remis {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+}* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    background: url('background-tech.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+      
+      
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background: #1e2a3c;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  .logo-img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+  }
+  
+  form input::placeholder {
+    color: #cccccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3fa9f5;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1f8edb;
+  }
+  
+  .signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .signup-text a {
+    color: #3fa9f5;
+    text-decoration: none;
+  }
+  .radio-group {
+  display: flex;
+  gap: 10px; /* Espace entre les boutons */
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espace entre le bouton et le texte */
+}
